@@ -1,7 +1,7 @@
 from flask import Flask, request, make_response
 from flask_restful import Resource, Api
 import json
-from model import get_features_by_id, select_feature_association, select_feature_matrix, get_db_connection, get_ids_by_feature, opposite, cohort_id_in_use, select_cohort, get_cohort_features, get_cohort_dictionary, service_name
+from model import get_features_by_id, select_feature_association, select_feature_matrix, get_db_connection, get_ids_by_feature, opposite, cohort_id_in_use, select_cohort, get_cohort_features, get_cohort_dictionary, service_name, get_cohort_by_id
 from flask_limiter import Limiter
 from flask_limiter.util import get_remote_address
 from jsonschema import validate, ValidationError
